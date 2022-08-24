@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container {
+  background: url(/images/restaurant\ 1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.container .welcome-address {
+  text-align: center;
+  position: relative;
+  top: 12rem;
+  margin: auto 2rem;
+}
+.container .welcome-address h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #FFFFFF;
+  font-family: Poppins, sans-serif;
+}
+.container .welcome-address h1 span {
+  display: block;
+}
+.container .welcome-address p {
+  color: #FFFEFE;
+  font-size: 18px;
+  margin-bottom: 2rem;
+  font-family: Alata, sans-serif;
+  font-weight: lighter;
+}
+.container .welcome-address .carousel {
+  display: flex;
+  justify-content: space-between;
+}
+.container .welcome-address .menu-links a {
+  border: 1px solid #FFFFFF;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 18px;
+  padding: 0.8rem 3rem;
+}
+.container .welcome-address .menu-links a:hover {
+  border-color: #000;
+  background: #000;
+  color: #FFFFFF;
+  transition: 0.3s;
+  outline: none;
+}
+.container .welcome-address .menu-links .menuBtn {
+  margin-right: 1rem;
+}
+
+.menu-container .nav {
+  background: #0C0B0B;
+  border: 1px solid #0C0B0B;
+  border-radius: 0.7rem;
+  margin: 0.5rem;
+  box-shadow: 1px 10px 10px 1px #B1B2B2;
+}
+.menu-container .nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-container .nav ul .active {
+  background: #F1D5BB;
+}
+.menu-container .nav ul .active img {
+  filter: invert(100%);
+}
+.menu-container .nav ul li {
+  padding: 0.5rem;
+}
+.menu-container .nav ul li a p {
+  color: #F1D5BB;
+  font-size: 3em;
+  font-family: Poppins, sans-serif;
+}
+.menu-container .nav ul li a img {
+  position: relative;
+  top: 13px;
+}
+.menu-container .delicacy {
+  margin: 2rem 1rem;
+}
+.menu-container .delicacy .more-dishes {
+  text-align: center;
+  margin-top: 1rem;
+}
+.menu-container .delicacy .more-dishes .load {
+  border: 1px solid #000;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  color: #9E9E9E;
+  background: #000;
+  font-family: Alata, sans-serif;
+}
+.menu-container .delicacy .more-dishes .load:hover {
+  color: #000;
+  background: #9e9e9e;
+  border-color: #9E9E9E;
+  transition: 0.3s;
+}
+.menu-container .delicacy p {
+  font-family: Poppins, sans-serif;
+  font-size: 2rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.menu-container .delicacy p:after {
+  content: "";
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  height: 4px;
+  width: 11rem;
+  border-radius: 0.8rem;
+  background: #F1D5BB;
+}
+.menu-container .delicacy .delicacy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.menu-container .delicacy .delicacy-grid a {
+  color: #000;
+}
+.menu-container .delicacy .delicacy-grid figure {
+  margin-bottom: 0.5rem;
+}
+.menu-container .delicacy .delicacy-grid figure img {
+  width: 100%;
+  height: 165px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.menu-container .delicacy .delicacy-grid figure img:hover {
+  filter: brightness(50%);
+  transition: 0.3s;
+}
+.menu-container .delicacy .delicacy-grid figure figcaption {
+  text-align: center;
+  font-size: 18px;
+  font-family: Alata, sans-serif;
+}
+.menu-container .delicacy .delicacy-grid figure figcaption:hover {
+  color: #A08E7D;
+  transition: 0.3s;
+}
+
+.copyright {
+  margin: 2rem 1rem;
+}
+.copyright p {
+  font-size: 18px;
+  font-family: Poppins, sans-serif;
+}/*# sourceMappingURL=style.css.map */
