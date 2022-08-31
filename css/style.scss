@@ -40,6 +40,11 @@
         .carousel{
             display: flex;
             justify-content: space-between;
+
+            img{
+                width: 2rem;
+                filter: invert(100%);
+            }
         }
 
         .menu-links{
@@ -81,6 +86,43 @@
         }
     }
 
+    .menu-nav{
+        background: #0C0B0B;
+        border: 1px solid #0C0B0B;
+        border-radius: .7rem;
+        margin: .5rem;
+        box-shadow: 1px 5px 10px #B1B2B2;
+
+        ul{
+            display: flex;
+            justify-content: space-between; 
+            
+            li{
+                padding: 1rem;
+
+                a{
+                    p{
+                        color: #F1D5BB;
+                        font-size: 3em;
+                        font-weight: 700;
+                        font-family: Poppins, sans-serif;
+                    }      
+                    
+                    img{
+                        position: relative;
+                        top: 13px;
+
+                        &:hover{
+                            filter: brightness(50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cart-container{
     .cart-nav{
         ul{
             .active-1{
@@ -93,7 +135,8 @@
             }
         }
     }
-    .menu-nav, .cart-nav{
+
+    .cart-nav{
         background: #0C0B0B;
         border: 1px solid #0C0B0B;
         border-radius: .7rem;
@@ -239,124 +282,138 @@
             background: #F1D5BB;
         }
     }
+}
 
-    .cart-list{
-        padding: 2rem 0;
-        background: #F1D5BB;
-        border-radius: .2rem;
+.cart-list{
+    padding: 2rem 0;
+    background: #F1D5BB;
+    border-radius: .2rem;
 
-        ul{
-            li{
-                padding: 1rem;
-                display: flex;
-                justify-content: space-around;
+    ul{
+        li{
+            padding: 1rem;
+            display: flex;
+            justify-content: space-around;
 
-                img{
-                    width: 60px;
-                    height: 60px;
-                    border-radius: 50%;
+            img{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+
+            p{
+                font-size: 18px;
+                font-family: Poppins, sans-serif;
+                text-align: left;
+
+                span{
+                    display: block;
                 }
+            }
 
-                p{
-                    font-size: 18px;
-                    font-family: Poppins, sans-serif;
-                    text-align: left;
+            .choose{
+                position: relative;
+                top: .8rem;
 
-                    span{
-                        display: block;
-                    }
-                }
-
-                .choose{
+                .increaseOrder{
                     position: relative;
-                    top: .8rem;
-
-                    input{
-                        width: 2rem;
-                        height: 1.5rem;
-                        margin: auto .5rem;
-                    }    
-                }
-
-                #cancelOrder{
-                    position: relative;
-                    top: .8rem;
+                    top: .5rem;
                     height: 25px;
                 }
+                .decreaseOrder{
+                    position: relative;
+                    top: .5rem;
+                    height: 25px;
+                }
+
+                input{
+                    width: 2rem;
+                    height: 1.5rem;
+                    margin: auto .5rem;
+                }    
+            }
+
+            .cancelOrder{
+                width: 1.3rem;
+                position: relative;
+                top: .2rem;
+            }
+        }
+    }
+}
+
+.total{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid #F1D5BB;
+    margin:  2rem 1rem;
+
+    .subtotal{
+        background: #F1D5BB;
+        padding: 1rem;
+
+        h3{
+            font-size: 1.8rem;
+            font-family: Poppins, sans-serif;
+            font-weight: 400;
+            margin-bottom: .5rem;
+        }
+
+        p{
+            font-size: 20px;
+            font-family: Poppins, sans-serif;
+            margin-bottom: .5rem;
+        }
+
+        button{
+            margin-top: 1rem;
+            border: 1px solid #000;
+            background: #000;
+            padding: 1rem 1rem;
+            color: #fff;
+            font-size: 18px;
+            font-family: Poppins, sans-serif;
+
+            &:hover{
+                color: #9E9E9E;
+                transition: .3s;
             }
         }
     }
 
-    .total{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        border: 1px solid #F1D5BB;
-        margin-top: 2rem;
+    .promo{
+        padding: 1rem;
 
-        .subtotal{
-            background: #F1D5BB;
-            padding: 1rem;
-
-            h3{
-                font-size: 1.8rem;
-                font-family: Poppins, sans-serif;
-                font-weight: 400;
-                margin-bottom: .5rem;
-            }
-
-            p{
-                font-size: 20px;
-                font-family: Poppins, sans-serif;
-                margin-bottom: .5rem;
-            }
-
-            button{
-                border: 1px solid #000;
-                background: #000;
-                padding: 1rem 1rem;
-                color: #fff;
-                font-size: 18px;
-                font-family: Poppins, sans-serif;
-
-                &:hover{
-                    color: #9E9E9E;
-                    transition: .3s;
-                }
-            }
+        h3{
+            font-family: Poppins, sans-serif;
+            font-weight: 400;
+            font-size: 1.8rem;
+            margin-bottom: .5rem;
         }
 
-        .promo{
-            padding: 1rem;
+        input{
+            border: 1px solid #F1D5BB;
+            padding: 1rem .8rem;
+            font-size: 16px;
+            font-family: Poppins, sans-serif;
+            background: transparent;
+            outline: none;
+            margin-bottom: .5rem;
+        }
 
-            h3{
-                font-family: Poppins, sans-serif;
-                font-weight: 400;
-                font-size: 1.8rem;
-                margin-bottom: .5rem;
-            }
+        button{
+            display: block;
+            border: 1px solid #000;
+            background: #000;
+            padding: .5rem 1.5rem;
+            color: #fff;
+            font-size: 18px;
+            font-family: Poppins, sans-serif;
+            margin-top: .5rem;
 
-            input{
-                border: 1px solid #F1D5BB;
-                padding: 1rem .8rem;
-                font-size: 16px;
-                font-family: Poppins, sans-serif;
-                background: transparent;
-                outline: none;
-                margin-bottom: .5rem;
-            }
-
-            button{
-                border: 1px solid #000;
-                background: #000;
-                padding: .5rem 1.5rem;
-                color: #fff;
-                font-size: 18px;
-                font-family: Poppins, sans-serif;
-
-                &:hover{
-                    color: #9E9E9E;
-                    transition: .3s;
-                }
+            &:hover{
+                color: #9E9E9E;
+                transition: .3s;
             }
         }
     }
@@ -376,15 +433,7 @@
             }
         }
 
-        .cart-nav{
-            ul{
-                .active-1{
-                    box-shadow: unset;
-                }
-            }
-        }
-
-        .menu-nav, .cart-nav{
+        .menu-nav{
             box-shadow: 10px 5px 10px 2px #B1B2B2;
             height: 650px;
 
@@ -406,6 +455,39 @@
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
             }
+        }
+    }
+
+    .cart-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+
+        .cart-nav{
+            width: 100px;
+            text-align: center;
+
+            ul{
+                display: block;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+    .cart-grid{
+        display: flex;
+        justify-content: space-between;
+
+        .cart-list{
+            width: 400px;
+           max-width: 800px;
+        }
+
+        .total{
+            display: block;
+            height: 404.253px;
+            width: 400px;
         }
     }
 }
